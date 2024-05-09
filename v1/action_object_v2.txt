@@ -1,0 +1,9 @@
+Variables: 
+!<INPUT 0>! -- action description
+!<INPUT 1>! -- objects available(in memory) in target sector and area
+
+<commentblockmarker>###</commentblockmarker>
+Current activity: !<INPUT 0>!
+Object(s) available: {!<INPUT 1>!}
+Notice that each of the Object(s) available is enclosed by " and ", and can be a phrase.
+Output the object most relevant to to the current activity from the Object(s) available(if there is no relevant object, please just randomly output one object from the Object(s) available):

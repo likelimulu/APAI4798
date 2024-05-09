@@ -1,0 +1,31 @@
+Variables: 
+!<INPUT 0>! -- Persona name
+!<INPUT 1>! -- Persona current village
+!<INPUT 2>! -- sectors(in memory) inside Persona current village
+!<INPUT 3>! -- villes(in memory) inside Persona current world
+!<INPUT 4>! -- Persona name
+!<INPUT 5>! -- Persona action description
+!<INPUT 6>! -- Persona living area
+
+<commentblockmarker>###</commentblockmarker>
+Task -- choose an appropriate village from the Village option(s) for a task at hand.
+
+Background:
+!<INPUT 0>!'s home(also sleeping place) is in !<INPUT 6>!.
+
+Current village and its sector(s):
+!<INPUT 0>! is currently in village {!<INPUT 1>!} that has sector(s): {!<INPUT 2>!}.
+
+Village option(s):
+{!<INPUT 3>!}
+
+Task at hand:
+For !<INPUT 5>!, which village(not sector) should !<INPUT 4>! go? 
+
+Requirement:
+1.Stay in the current village if the activity can be done there. Only go out if the activity needs to take place in another village.
+2.Notice that each of the Village option(s) is enclosed by " and ", and can be a phrase.
+3.The output must be one of the Village option(s).
+4.If there is no appropriate option, just randomly choose one.
+
+(Please just output the text of the chosen village option, like "xxx")

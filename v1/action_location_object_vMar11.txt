@@ -1,0 +1,30 @@
+Variables: 
+!<INPUT 0>! -- Persona name
+!<INPUT 1>! -- Persona's target sector
+!<INPUT 2>! -- arenas(in memory) in Persona's target sector
+!<INPUT 3>! -- Persona name
+!<INPUT 4>! -- action_description
+!<INPUT 5>! -- Persona living area
+
+<commentblockmarker>###</commentblockmarker>
+Task -- choose an appropriate area from the Area option(s) for a task at hand.
+
+Background:
+!<INPUT 0>!'s home(also sleeping place) is in !<INPUT 5>!.
+
+Destination sector and its area(s):
+!<INPUT 0>!'s current destination is sector {!<INPUT 1>!}, and this sector has area(s): {!<INPUT 2>!}.
+
+Area option(s):
+{!<INPUT 2>!}
+
+Task at hand:
+For !<INPUT 4>!, which area should !<INPUT 3>! go? 
+
+Requirement:
+1.Choose the area that is most appropriate to finish the task at hand.
+2.Notice that each of the Area option(s) is enclosed by " and ", and can be a phrase.
+3.The output must be one of the Area option(s).
+4.If there is no appropriate option, just randomly choose one.
+
+(Please just output the text of the chosen area option, like "xxx")
