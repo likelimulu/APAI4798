@@ -1,0 +1,18 @@
+insight_and_evidence_v1.txt
+
+Variables: 
+!<INPUT 0>! -- Numbered list of event/thought statements
+!<INPUT 1>! -- target number of insights needed to be generated
+
+<commentblockmarker>###</commentblockmarker>
+Statements:
+(Each statement consists of serial number + statement)
+!<INPUT 0>!
+
+Requirement:
+1.According to the above statements, please output !<INPUT 1>! high-level insights you can infer from the above statements, with the statements' numbers that you use to infer each insight(e.g. "Mike has secret love for Jane--infer from 1, 3, 5").
+2.The output should be a list that includes all 5 insights and corresponding statements' serial numbers.
+3.Insight don't need be to be completely accurate, it can be a reasonable guess as long as it is deep and words like 'maybe' or 'may' are used.
+
+Example output format(the "..." below means the insight needs to be filled in): 
+["...--infer from 1, 3, 5", "...--infer from 10, 20, 21", "...--infer from 14, 23, 29", "...--infer from 4, 18, 25", "...--infer from 5, 18, 27"]

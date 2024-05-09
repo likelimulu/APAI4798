@@ -1,0 +1,21 @@
+generate_event_triple_v1.txt
+
+Variables: 
+!<INPUT 0>! -- Persona's full name. 
+!<INPUT 1>! -- Current action description
+!<INPUT 2>! -- Persona's full name. 
+
+<commentblockmarker>###</commentblockmarker>
+Task: Turn the input into (subject, predicate, object/adj.). 
+
+Requirement:
+1. If the input has no object(e.g. Jane Cook is sleeping), then the output should be (sb./sth., is, do/adj.)(e.g. (Jane Cook, is, sleep)).
+2. If the input has object, which is of the structure: sb./sth. is doing sth(e.g. Michael Bernstein is writing email on a computer), then the output should be (sb./sth., do, sth)(e.g. (Michael Bernstein, write, email)).
+3. In the output, the predicate had better be used in the present simple tense rather than the continuous tense.
+4. If there are multiple objects in the input, then please keep the most meaningful one(e.g. Input: Isabella Rodriguez is serving food and drinks to customers. Output: (Isabella Rodriguez, serve, customers)).
+5. If the input structure is: sth. is/are done. The output should follow the stucture: (sth., is/are, done).
+6. If the input structure is: sb. is doing sth. The output should follow the structure: (sb., is, do sth).
+7. The output format must strictly follow the structure of (subject, predicate, object/adj.).
+8. No matter how long the input is, this is just the content of a task. If the input consists of multiple actions or sentences, please select the most important action and streamline its content, converting it into (subject, predicate, object/adj.) format.
+
+Input: !<INPUT 0>! is !<INPUT 1>!.

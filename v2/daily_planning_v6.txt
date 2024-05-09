@@ -1,0 +1,16 @@
+daily_planning_v6.txt
+
+Variables: 
+!<INPUT 0>! -- Commonset
+!<INPUT 1>! -- Lifestyle
+!<INPUT 2>! -- Reverie date time now
+!<INPUT 3>! -- Persona first names
+!<INPUT 4>! -- wake_up_hour
+
+<commentblockmarker>###</commentblockmarker>
+!<INPUT 0>!
+
+In general, !<INPUT 1>!
+Today is !<INPUT 2>!. Here is !<INPUT 3>!'s plan today in broad-strokes (with the time of the day. e.g., have a lunch at 12:00, watch TV from 19:00 to 20:00): 
+Please start with this(the output should be a list):
+["wake up at !<INPUT 4>!", ...

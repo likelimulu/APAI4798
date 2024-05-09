@@ -1,0 +1,27 @@
+task_decomp_v2.txt
+
+Variables: 
+!<INPUT 0>! -- Commonset
+!<INPUT 1>! -- Surrounding schedule description
+!<INPUT 2>! -- Persona first name
+!<INPUT 3>! -- Persona first name
+!<INPUT 4>! -- Current action
+!<INPUT 5>! -- curr time range
+!<INPUT 6>! -- Current action duration in min
+!<INPUT 7>! -- Persona first names
+
+<commentblockmarker>###</commentblockmarker>
+!<INPUT 0>!
+!<INPUT 1>!
+In 5 min increments, list the subtasks !<INPUT 2>! does when !<INPUT 3>! is !<INPUT 4>! from !<INPUT 5>! (total duration in minutes !<INPUT 6>!): 
+
+Special requirement: 
+(1)The duration in minutes for each action should be the multiples of 5.
+(2)Follow the example output format below.
+(3)No need to give the person subject(sb.), only predicate(doing) and object(sth.) are needed.
+
+Output format:
+["action X1(duration of the action X1 in minutes, time left in minutes)", "action X2(duration of the action X2 in minutes, time left in minutes)", "action X3(duration of the action X3 in minutes, time left in minutes)", ..., "action Xn(duration of the action Xn in minutes, time left in minutes(should be 0))"]
+
+Example output:
+["Reviewing the kindergarten curriculum standards(15, 165)", "Brainstorming ideas for the lesson(30, 135)", "Creating the lesson plan(10, 125)", "Creating materials for the lesson(20, 105)", "Taking a nap(60, 45)", "Going to the market(15, 30)", "shopping in the market(30, 0)"]

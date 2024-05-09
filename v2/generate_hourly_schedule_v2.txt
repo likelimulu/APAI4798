@@ -1,0 +1,15 @@
+generate_hourly_schedule_v2.txt
+
+Variables: 
+!<INPUT 0>! -- Commonset
+!<INPUT 1>! -- intermission_str
+!<INPUT 2>! -- schedule_format
+!<INPUT 3>! -- intermission_2
+!<INPUT 4>! -- prompt_ending
+
+<commentblockmarker>###</commentblockmarker>
+!<INPUT 0>!
+!<INPUT 1>!
+!<INPUT 2>!
+!<INPUT 3>!
+!<INPUT 4>!
